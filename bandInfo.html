@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Band Infortmation</title><br />
+		<link href="_css/styles.css" rel="stylesheet" type="text/css">
+		<script src="_js/date_time.js"></script>
+        <script src="_js/navigation.js"></script>
+        <script>
+			function start(page) {
+				setNavigation(page);
+				
+			}	
+		 </script>
+    </head>
+    
+<body onload="start('bandInfo');">
+        <div id="wrapper">
+            <article>   
+                <div class="Header">
+                    <table width="100%" border="1" cellspacing="1" cellpadding="1">
+                        <tr>
+                            <th scope="col" width="25%">
+                           		<span id=curTime></span>
+                            </th>
+                            <th scope="col" width="50%">
+                                <div class="header">
+                                    Welcome to ham-r.net<br  \>
+                                    My home on the world wide wait.
+                                </div>
+                            </th>
+                            <th scope="col" width="25%">           
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <nav id="nav">
+                                    <ul id="navigation"></ul>
+                                </nav> 
+                            </td>                
+                        </tr>
+                        <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        </tr>
+                        </tr>
+                    </table>
+                </div>
+            </article> 
+            <div class="clear"></div><div class="headspace"></div>  
+            <form id="bandMain">
+                <fieldset id="bandFSet" align="center">
+                        <legend class="header" id="bandLeg">Bands</legend>
+                        <embed src="http://www.arrl.org/files/file/Regulatory/Band%20Chart/Hambands_color.pdf\" width="100%" height="900px" type='application/pdf'>
+              </fieldset>
+            </form>
+            <footer class="Footer">
+            	<p class="Disclaimer">This web site is currently being developed and will probably never be completed.</p>
+                <!--<a href="AboutMe.html">About Me</a>&nbsp;<a href="Disclaimer.html">Disclaimer</a>&nbsp;<a href="ContactMe.html">Contact Me</a> -->
+                <p>Copyright © 2015</p>
+            </footer>
+    	</div>
+</body>
+</html>

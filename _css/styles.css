@@ -1,0 +1,317 @@
+@charset "utf-8";
+/* CSS Document */
+/* css reset - makes the layout looking good in all browsers */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	font-family: inherit;
+	font-style: normal;
+	font-weight: bold;
+	color: #000;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block; }
+body
+{
+	overflow-x:scroll;
+	overflow-y:scroll;	
+}
+.Header {
+	width: 100%;
+	height: 200%;
+	background-image: url(../_images/header/header1.jpg); 
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*position: fixed;*/
+   /* left: 100px;*/
+    top: 5px;
+}
+#wrapper
+{
+	width: 99.5%;
+	height:  auto;
+	margin-left: auto;
+	margin-right: auto;	
+	background-color:#CCC;
+	opacity: 0.8;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+	filter: alpha(opacity=90);
+	background-size: cover;
+	position: absolute;
+	font-size: 100%;
+	left: 2px;
+	/*border: thick groove #000;*/
+}
+#wrapperHam
+{
+	width: 100%;
+	height: 100% /* auto*/;
+	margin-left: auto;
+	margin-right: auto;	
+	/*background-image: url(../_images/space-satellite_01.jpg);*/
+	opacity: 0.8;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+	filter: alpha(opacity=90);
+	background-size: cover;
+	position: absolute;
+	font-size: 100%;
+	left: 2px;
+	/*border: thick groove #000;*/
+}
+#wrapperRun
+{
+	width: 100%;
+	height: 100% /* auto*/;
+	margin-left: auto;
+	margin-right: auto;	
+	/*background-image: url(../_images/space-satellite_01.jpg);*/
+	opacity: 0.8;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+	filter: alpha(opacity=90);
+	background-size: cover;
+	position: absolute;
+	font-size: 100%;
+	left: 2px;
+	/*border: thick groove #000;*/
+}
+#top
+{
+	width: auto;
+	height: 25px;
+	/*background-color: #FFF;*/
+	/*border: thick groove #000;*/
+}
+
+table
+{
+	color: #000;
+	/*color: #FFF;*/
+	/*opacity: 0.8;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+	text-align: center;
+	font-family: "AR JULIAN";
+	word-spacing: normal;
+	vertical-align: middle;
+
+}
+.headspace
+{
+	width: auto;
+	height: 5px;
+	/*background-color: #FFF;*/
+	/*border: thick groove #000;*/
+}
+.clear
+{
+	clear:both;
+}
+.top
+{
+	width: auto;
+	height: 25px;
+	/*background-color: #FFF;*/
+	/*border: thick groove #000;*/
+}
+.header
+{
+	font-size: 3.5em;
+}
+
+#nav {
+	position:relative;
+	width:620px;
+	margin:auto auto;
+}
+#navigation {
+	width: 99%;
+	padding: auto;
+		
+}
+ul#navigation {
+	margin:0px auto;
+	position:relative;
+	float:left;
+	border-left:1px solid #c4dbe7;
+	border-right:1px solid #c4dbe7;
+}
+
+ul#navigation li {
+	display:inline;
+	/*font-size:75%;*/
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	float:left;
+	position:relative;
+	border-top:1px solid #c4dbe7;
+	border-bottom:2px solid #c4dbe7;
+}
+
+ul#navigation li a {
+	padding:10px 25px;
+	color:#616161;
+	text-shadow:1px 1px 0px #fff;
+	text-decoration:none;
+	display:inline-block;
+	border-right:1px solid #fff;
+	border-left:1px solid #C2C2C2;
+	border-top:1px solid #fff;
+	background: #f5f5f5;
+	
+	-webkit-transition:color 0.2s linear, background 0.2s linear;	
+	-moz-transition:color 0.2s linear, background 0.2s linear;	
+	-o-transition:color 0.2s linear, background 0.2s linear;	
+	transition:color 0.2s linear, background 0.2s linear;	
+}
+
+ul#navigation li a:hover {
+	background:#f8f8f8;
+	color:#282828;
+}
+
+ul#navigation li:hover > a {
+	/*background:#fff;*/
+}
+
+/* Drop-Down Navigation */
+ul#navigation li:hover > ul
+{
+	visibility:visible;
+	opacity:1;
+}
+
+ul#navigation ul, ul#navigation ul li ul {
+	list-style: none;
+    margin: 0;
+    padding: 0;    
+	visibility:hidden;
+    position: absolute;
+    z-index: 99999;
+	width:180px;
+	background:#f8f8f8;
+	box-shadow:1px 1px 3px #ccc;
+	opacity:0;
+	-webkit-transition:opacity 0.2s linear, visibility 0.2s linear; 
+	-moz-transition:opacity 0.2s linear, visibility 0.2s linear; 
+	-o-transition:opacity 0.2s linear, visibility 0.2s linear; 
+	transition:opacity 0.2s linear, visibility 0.2s linear; 	
+}
+
+ul#navigation ul {
+    top: 43px;
+    left: 1px;
+}
+
+ul#navigation ul li ul {
+    top: 0;
+    left: 181px;
+}
+
+ul#navigation ul li {
+	clear:both;
+	width:100%;
+	border:0 none;
+	border-bottom:1px solid #c9c9c9;
+}
+
+ul#navigation ul li a {
+	background:none;
+	padding:7px 15px;
+	color:#616161;
+	text-shadow:1px 1px 0px #fff;
+	text-decoration:none;
+	display:inline-block;
+	border:0 none;
+	float:left;
+	clear:both;
+	width:15%;
+}
+
+ul#navigation li a.first {
+	border-left: 0 none;
+}
+
+ul#navigation li a.last {
+	border-right: 0 none;
+}
+
+footer {
+ /* margin-left: 240px;*/
+  max-width: 100%;
+  min-width: 400px;
+
+  text-align: center;
+  font-size: 125%;
+  font-style: normal;
+  font-weight: bold;
+}
+
+footer .Disclaimer {
+  font-style: italic;
+}
+
+footer p {
+  margin: 3px;
+}
+
+.leftNav
+{
+	width: 10%;
+	height: 95%;
+	font-size: 20px;
+	float: left;
+	color: #000;
+	opacity:0.8;
+   	filter:alpha(opacity=50); /* For IE8 and earlier */
+	vertical-align: middle;
+	text-align: center;
+	margin-top: .25%;
+	margin-right: 20px;
+	border: thick groove #000;
+}
+
+.largeContent
+{
+	width: 86%;
+	height: 95%;
+	font-size: 20px;
+	float: left;
+	color: #000;
+	opacity:0.8;
+   	filter:alpha(opacity=50); /* For IE8 and earlier */
+	vertical-align: middle;
+	text-align: center;
+	margin-top: .25%;
+	border: thick groove #000;
+}
+.freqFMenu{
+	display:block;
+	width;500px;
+	margin: 0 auto;
+	border: none;
+	text-align: center;
+	padding: 40px;
+}
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+#formulas {
+	width:600px;
+	height:200px;
+	border:solid;  
+	float:left;"
+	margin-top:  10px;
+	margin-bottom: 10px;
+	
+	text-align:center;
+	
+}
